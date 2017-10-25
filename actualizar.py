@@ -9,6 +9,11 @@ Función de actualizar
 	-Nueva matriz
 '''
 import cesar
+import copy
 
 def actualizar(matriz):
-	
+	mat_act=copy.deepcopy(matriz)
+	for i in range(len(matriz)):
+		for j in range(len(matriz[0])):
+			mat_act[i][j]=cesar.cesar(i,j, matriz)
+	return mat_act
