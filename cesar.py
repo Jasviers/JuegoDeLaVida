@@ -12,5 +12,16 @@ matriz aplicando las reglas del juego devuelve true o false
 	-Booleano
 
 '''
+alrededor = [(1,0), (1,1), (0,1), (-1,1), (-1,0), (-1,-1), (0,-1), (1,-1)]
 def cesar(i, j, matriz):
-	
+	 celVivas = 0; #Cuenta las celulas vivas alrededor de la que estamos estudiando
+	 for x[0] + i and x[1] + j in alrededor:
+		 if alrededor == True:
+		 	celVivas += 1 #Necesito mierda de la buena coniio
+	#Reglas Mágico-fantásticas________________________________________________________
+	if celVivas < 2 or celVivas > 3:
+		#Muere
+	elif celVivas == 3:
+		#Vive
+	else:
+		#Se queda como está
